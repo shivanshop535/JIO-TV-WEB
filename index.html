@@ -25,13 +25,48 @@
     </center>
     <br>
 
-    <!-- Search Bar Section -->
-    <div class="container">
-        <div class="search-container">
-            <input type="text" id="search-input" class="search-input" placeholder="Search Channels Here...">
-        </div>
-	    
-    <!-- Script for Search Functionality -->
+</center>
+<br>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1128px;
+            margin: 0 auto;
+            padding: 10px;
+            
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+        .channel-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 100px;
+            
+        }
+        .card-text {
+            margin-top:20px;
+            font-size: 15px;
+          
+        }
+	
+    </style>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var searchInput = document.getElementById('search-input');
@@ -48,19 +83,6 @@
             });
         });
     </script>
-</body>
-</html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-	<title>TECHY KULDEEP JIO TV WEB</title>
-	<link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/37fVLxB/f4027915ec9335046755d489a14472f2.png">
-	<meta name="robots" content="noindex" />
-	<link rel="stylesheet" href="data/css/TechyKuldeep.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
-
-</head>
 <body>
 		<div class="container">
 			<div class="search-container">
@@ -69,7 +91,6 @@
 	<div id="content">
 		<div class="container">
 			<div id="list" class="row">
-			
 				<a href="https://drmlive.in/jiotv/play.php?c=CNBC_Tv18_Prime_HD&id=143" class="card" data-channel-name="CNBC Tv18 Prime HD">
 <img class="lazyload" data-src="http://jiotv.catchup.cdn.jio.com/dare_images/images/CNBC_Tv18_Prime_HD.png"style="height: 133px">
 <p class="card-body">CNBC Tv18 Prime HD</p>
