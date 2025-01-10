@@ -86,7 +86,27 @@
         </a>
     </center>
 
-    <!-- Search and Content Section -->
+   </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var searchInput = document.getElementById('search-input');
+            var channelCards = document.getElementsByClassName('card');
+
+            searchInput.addEventListener('input', function() {
+                var searchQuery = searchInput.value.trim().toLowerCase();
+
+                Array.from(channelCards).forEach(function(card) {
+                    var channelName = card.dataset.channelName.toLowerCase();
+                    var isVisible = channelName.includes(searchQuery);
+                    card.style.display = isVisible ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+<body>
+		<div class="container">
+			<div class="search-container">
+            	<input type="text" id="search-input" class="search-input" placeholder="Search Channels Here...">
 		<div class="container">
 			<div id="list" class="row">
 			
