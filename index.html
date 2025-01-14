@@ -54,16 +54,19 @@
             font-size: 15px;
         }
     </style>
-    <script>
+
+<script>
         document.addEventListener('DOMContentLoaded', function() {
             var searchInput = document.getElementById('search-input');
             var channelCards = document.getElementsByClassName('card');
 
             searchInput.addEventListener('input', function() {
                 var searchQuery = searchInput.value.trim().toLowerCase();
+
                 Array.from(channelCards).forEach(function(card) {
                     var channelName = card.dataset.channelName.toLowerCase();
-                    card.style.display = channelName.includes(searchQuery) ? 'block' : 'none';
+                    var isVisible = channelName.includes(searchQuery);
+                    card.style.display = isVisible ? 'block' : 'none';
                 });
             });
         });
@@ -87,22 +90,6 @@
     </center>
 
    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var searchInput = document.getElementById('search-input');
-            var channelCards = document.getElementsByClassName('card');
-
-            searchInput.addEventListener('input', function() {
-                var searchQuery = searchInput.value.trim().toLowerCase();
-
-                Array.from(channelCards).forEach(function(card) {
-                    var channelName = card.dataset.channelName.toLowerCase();
-                    var isVisible = channelName.includes(searchQuery);
-                    card.style.display = isVisible ? 'block' : 'none';
-                });
-            });
-        });
-    </script>
 <body>
 		<div class="container">
 			<div class="search-container">
