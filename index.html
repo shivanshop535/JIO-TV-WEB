@@ -11,51 +11,44 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
         }
-        #jtvh1 {
-            margin: 20px 0;
-        }
+
         .container {
             max-width: 1128px;
             margin: 0 auto;
             padding: 10px;
+            
         }
+
         .search-container {
             display: flex;
-            justify-content: center;
+            align-items: center;
             margin-bottom: 20px;
         }
+
         .search-input {
+            flex: 1;
             padding: 10px;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 4px;
             outline: none;
-            width: 50%;
         }
         .channel-row {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-            gap: 20px;
-        }
-        .card {
-            border: 1px solid #ccc;
-            padding: 10px;
-            border-radius: 5px;
-            width: 200px;
-            text-align: center;
+            gap: 100px;
+            
         }
         .card-text {
-            margin-top: 20px;
+            margin-top:20px;
             font-size: 15px;
+          
         }
+	
     </style>
-
-<script>
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             var searchInput = document.getElementById('search-input');
             var channelCards = document.getElementsByClassName('card');
@@ -71,7 +64,6 @@
             });
         });
     </script>
-</head>
 
 <body>
     <!-- Header Section -->
